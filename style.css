@@ -7,7 +7,7 @@ html, body {
 
 /* Blur-up placeholder before main image loads */
 body {
-  background-image: url('sphinx.png');
+  background-image: url('copticsongs.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
 
 /* Once main image is loaded, remove blur */
 body.loaded {
-  background-image: url('images/sphinx.png');
+  background-image: url('images/copticsongs.png');
   filter: blur(0);
 }
 
