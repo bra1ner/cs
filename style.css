@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #f13600; /* fallback color while image loads */
+}
+
+/* Blur-up placeholder before main image loads */
+body {
+  background-image: url('sphinx.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(5px);
+  transition: filter 0.1s ease-in-out;
+}
+
+/* Once main image is loaded, remove blur */
+body.loaded {
+  background-image: url('images/sphinx.png');
+  filter: blur(0);
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
